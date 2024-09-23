@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -36,24 +35,8 @@
                 Progetti
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="Flip_card.htm">Flip Card</a></li>
-                <li><a class="dropdown-item" href="moveimage.htm">MoveImage</a></li>
-                <li><a class="dropdown-item" href="esercizio3_tpsit.html">Stampa numeri</a></li>
-                <li><a class="dropdown-item" href="es.1.html">Esercizio pianeti</a></li>
-                <li><a class="dropdown-item" href="es.1 corretto_verif.html">Es.1 verifica</a></li>
-                <li><a class="dropdown-item" href="es.2 verif.html">Es.2 verifica</a></li>
-                <li><a class="dropdown-item" href="es.3 verif.html">Es.3 verifica</a></li>
-                <li><a class="dropdown-item" href="math random.html">Genera numeri casuali</a></li>
-                <li><a class="dropdown-item" href="esercizio_pannelli">Convertitore da kW a kWh</a></li>
-                <li><a class="dropdown-item" href="pizza_bomba">Pizza bomba</a></li>
-                <li><a class="dropdown-item" href="bar1.html">Bar</a></li>
-                <li><a class="dropdown-item" href="sushi.html">Ordina sushi</a></li>
-                <li><a class="dropdown-item" href="concessionario.html">Concessionario</a></li>
-                <li><a class="dropdown-item" href="frasi_simpatiche.html">Frasi simpatiche</a></li>
-                <li><a class="dropdown-item" href="bar_v1.html">Bar v1</a></li>
-                <li><a class="dropdown-item" href="verifica_bootstrap.html">Verifica Bootstrap</a></li>
-                <li><a class="dropdown-item" href="analisi_numerica.html">Analisi Numerica</a></li>
-                <li><a class="dropdown-item" href="prova2_verifica.html">Prova Verifica</a></li>
+                <li><a class="dropdown-item" href="tpsit.html ">Flip Card</a></li>
+                <li><a class="dropdown-item" href="tpsit2.html">MoveImage</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
@@ -68,10 +51,6 @@
               </a>
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="Grafica1.html">Grafica 1</a></li>
-                <li><a class="dropdown-item" href="Grafica2.html">Grafica 2</a></li>
-                <li><a class="dropdown-item" href="Grafica3.html">Grafica 3</a></li>
-                <li><a class="dropdown-item" href="scacchiera.html">Scacchiera</a></li>
-                <li><a class="dropdown-item" href="#">Another space</a></li>
 
               </ul>
             </li>
