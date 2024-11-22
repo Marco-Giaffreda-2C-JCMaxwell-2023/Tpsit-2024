@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="targheApp">
+<head>
+    <title>Controllo Targa</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        body {
+            background-image: url('https://iltergicristallo.it/twp/wp-content/uploads/2014/05/patente.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        .valida {
+            background-color: green;
+            color: white;
+        }
+        .non-valida {
+            background-color: red;
+            color: white;
+        }
+        .contenuto {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body ng-controller="targheController">
+    <div class="contenuto">
+        <h2>Immetti la targa </h2>
+        <form ng-submit="aggiungiTarga()">
+            <input type="text" ng-model="nuovaTarga" placeholder="Inserisci la targa" maxlength="7" required />
+            <button type="submit">Aggiungi Targa</button>
+        </form>
+
+        <h3>Tutte le targhe inserite:</h3>
+        <table border="1">
+            <tr>
+                <th>Targa</th>
+                <th>Validità</th>
+            </tr>
+            <tr ng-repeat="targa in targhe" ng-class="targa.valida ? 'valida' : 'non-valida'">
+                <td>{{ targa.valore }}</td>
+                <td>{{ targa.valida ? 'Valida' : 'Non Valida' }}</td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        var app = angular.module('targheApp', []);
+        app.controller('targheController', ['$scope', function($scope) {
+            $scope.targhe = [];
+
+            // Funzione per aggiungere una nuova targa
+            $scope.aggiungiTarga = function() {
+                if ($scope.nuovaTarga) {
+                    var regex = /^[A-HJ-NP-Z]{2}\d{3}[A-HJ-NP-Z]{2}$/i;
+                    var targaValida = regex.test($scope.nuovaTarga);
+                    $scope.targhe.push({
+                        valore: $scope.nuovaTarga.toUpperCase(),
+                        valida: targaValida
+                    });
+                    $scope.nuovaTarga = '';
+                }
+            };
+        }]);
+    </script>
+</body>
+</html>
