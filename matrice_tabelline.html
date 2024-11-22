@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="tabellineApp">
+
+<head>
+    <title>Matrice delle Tabelline</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #000;
+        }
+
+        .pari {
+            background-color: blue;
+            color: white;
+        }
+
+        .dispari {
+            background-color: red;
+            color: white;
+        }
+    </style>
+</head>
+
+<body ng-controller="TabellineController">
+
+    <h1>Matrice delle Tabelline da 1 a 10</h1>
+
+    <!-- Tabella delle tabelline -->
+    <table>
+        <tr ng-repeat="riga in tabelline">
+            <td ng-repeat="numero in riga" ng-class="getClass(numero)">
+                {{ numero }}
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        // Modulo di AngularJS
+        var app = angular.module('tabellineApp', []);
+
+        // Controller per calcolare la nostra matrice delle tabelline
+        app.controller('TabellineController', function ($scope) {
+            $scope.tabelline = [];   // Inizializza la matrice delle tabelline
+
+            // Calcola le tabelline da 1 a 10
+            for (var i = 1; i <= 10; i++) {
+                var riga = [];
+                for (var j = 1; j <= 10; j++) {
+                    riga.push(i * j);
+                }
+                $scope.tabelline.push(riga);
+            }
+
+            // Funzione per determinare la classe in base al numero
+            $scope.getClass = function (numero) {
+                if (numero % 2 === 0) {
+                    return 'pari';
+                } else {
+                    return 'dispari';
+                }
+            };
+        });
+    </script>
+
+</body>
+
+</html>
