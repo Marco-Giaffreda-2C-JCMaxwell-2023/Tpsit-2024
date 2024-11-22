@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="it" ng-app="imageTableApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabella con Immagini e Didascalie</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100px;
+            height: auto;
+        }
+
+        .caption {
+            font-size: 14px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body ng-controller="ImageTableController">
+
+    <table>
+        <tr ng-repeat="i in [0, 1, 2, 3, 4]">
+            <td>
+                <img ng-src="{{imageData[i].src}}" alt="{{imageData[i].caption}}">
+            </td>
+            <td>
+                <div class="caption">{{imageData[i].caption}}</div>
+            </td>
+        </tr>
+    </table>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script>
+        var app = angular.module('imageTableApp', []);
+
+        app.controller('ImageTableController', function($scope) {
+            $scope.imageData = [
+                { src: 'https://placebear.com/100/100', caption: 'Immagine 1' },
+                { src: 'https://picsum.photos/100/100', caption: 'Immagine 2' },
+                { src: 'https://picsum.photos/100/100?random=3', caption: 'Immagine 3' },
+                { src: 'https://picsum.photos/100/100?random=4', caption: 'Immagine 4' },
+                { src: 'https://picsum.photos/100/100?random=5', caption: 'Immagine 5' }
+            ];
+        });
+    </script>
+
+</body>
+</html>
