@@ -15,14 +15,17 @@
             height: 100%;
             overflow: hidden;
             font-family: Arial, sans-serif;
+            background-image: url('fallback.jpg'); /* Immagine di fallback */
+            background-size: cover;
+            background-position: center;
         }
 
         #background-video {
             position: fixed;
             top: 0;
             left: 0;
-            width: 100%;
-            height: 100%;
+            width: 100vw;
+            height: 100vh;
             object-fit: cover;
             z-index: -1;
         }
@@ -111,6 +114,7 @@
 
     <video id="background-video" autoplay loop muted>
         <source src="sfondo3.mp4" type="video/mp4">
+        Il tuo browser non supporta il video.
     </video>
 
     <div id="intro">
@@ -147,6 +151,13 @@
                 alert("Pagina non trovata! Prova con un'altra ricerca.");
             }
         }
+
+        // Fallback nel caso il video non venga caricato
+        const video = document.getElementById('background-video');
+        video.addEventListener('error', () => {
+            console.error('Errore durante il caricamento del video!');
+            document.body.style.backgroundImage = "url('fallback.jpg')";
+        });
     </script>
 
 </body>
