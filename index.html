@@ -1,72 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
-  <title>Marco's website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Marco's Website</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        #intro {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    </style>
 </head>
 
 <body>
 
-  <div class="container">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a href="https://www.apple.com/it/" target="_blank">
-          <img src="IMG_4305.jpg" alt="Marco's Image" style="width:50px; height:50px;">
-          <a class="navbar-brand" href="#" target="_blank"></a><b>Marco Giaffreda</b></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Progetti
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="targa.html">Controllo Targhe</a></li>
-                <li><a class="dropdown-item" href="es2.html">Es.2 Pari o Dispari</a></li>
-                <li><a class="dropdown-item" href="tpsit2.html">Es.3 Numero Primi</a></li>
-                <li><a class="dropdown-item" href="es4.html">Es.4 Numeri Casuali</a></li>
-                <li><a class="dropdown-item" href="array_primi.html">Array di Num Primi</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="gioco15.html">Gioco Scacchi</a></li>
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Esercizi Paiola
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="stampa_immagini.html">Stampa Immagini</a></li>
-                <li><a class="dropdown-item" href="targa.html">Controllo Targhe</a></li>
-                 <li><a class="dropdown-item" href="matrice_tabelline.html">Matrice Tabelline</a></li>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a href="https://www.apple.com/it/" target="_blank">
+                    <img src="IMG_4305.jpg" alt="Marco's Image" style="width:50px; height:50px;">
+                    <a class="navbar-brand" href="#" target="_blank"></a><b>Marco Giaffreda</b></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Progetti
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="targa.html">Controllo Targhe</a></li>
+                                <li><a class="dropdown-item" href="es2.html">Es.2 Pari o Dispari</a></li>
+                                <li><a class="dropdown-item" href="tpsit2.html">Es.3 Numero Primi</a></li>
+                                <li><a class="dropdown-item" href="es4.html">Es.4 Numeri Casuali</a></li>
+                                <li><a class="dropdown-item" href="array_primi.html">Array di Num Primi</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="gioco15.html">Gioco Scacchi</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Esercizi Paiola
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="stampa_immagini.html">Stampa Immagini</a></li>
+                                <li><a class="dropdown-item" href="targa.html">Controllo Targhe</a></li>
+                                <li><a class="dropdown-item" href="matrice_tabelline.html">Matrice Tabelline</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search" onsubmit="Cerca(event)">
+                        <input class="form-control me-2" type="search" id="search-box" placeholder="Cerca"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Cerca</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </div>
 
-              </ul>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+    <video id="background-video" autoplay loop muted>
+        <source src="sfondo3.mp4" type="video/mp4">
+    </video>
+
+    <div id="intro">
+        <div>
+            <h1>Benvenuto sul sito di Marco Giaffreda</h1>
+            <p>
+                In questo sito caricherò i lavori di Tpsit dell'HTML, CSS, JavaScript e molto altro ancora.
+                Esplora i giochi nel menu a tendina nella sezione Progetti!
+            </p>
         </div>
-      </div>
-    </nav>
-  </div>
+    </div>
+
+    <script>
+        function Cerca(event) {
+            event.preventDefault(); // Previene il ricaricamento della pagina
+            const query = document.getElementById("search-box").value.toLowerCase();
+
+            // Dizionario di corrispondenze
+            const pages = {
+                "gioco scacchi": "gioco15.html",
+                "controllo targhe": "targa.html",
+                "pari o dispari": "es2.html",
+                "numero primi": "tpsit2.html",
+                "numeri casuali": "es4.html",
+                "array num primi": "array_primi.html",
+                "stampa immagini": "stampa_immagini.html",
+                "matrice tabelline": "matrice_tabelline.html"
+            };
+
+            // Reindirizza alla pagina corrispondente
+            if (pages[query]) {
+                window.location.href = pages[query];
+            } else {
+                alert("Pagina non trovata! Prova con un'altra ricerca.");
+            }
+        }
+    </script>
 
 </body>
 
