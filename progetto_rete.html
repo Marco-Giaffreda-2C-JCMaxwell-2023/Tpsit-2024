@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progetto Rete Aziendale</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+        }
+
+        .firma {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-family: 'Great Vibes', cursive;
+            font-size: 1.8rem;
+            color: #bbbbbb;
+            opacity: 0.95;
+        }
+
+        .section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #1e1e1e;
+            border-radius: 16px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            border-bottom: 2px solid #0dcaf0;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .badge {
+            font-size: 0.9em;
+        }
+
+        .table-dark th,
+        .table-dark td {
+            color: #fff;
+            vertical-align: middle;
+        }
+
+        .icon-title {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        img {
+            border: 2px solid #0dcaf0;
+            border-radius: 12px;
+            margin-top: 20px;
+            max-width: 100%;
+        }
+
+        a .prodotto {
+            transition: border 0.3s ease;
+            border: 2px solid transparent;
+            border-radius: 16px;
+        }
+
+        a:hover .prodotto {
+            border: 2px solid #0dcaf0;
+        }
+
+        .schema-rete img {
+            border: none !important;
+        }
+
+        .table-dark td:first-child {
+            width: 40px;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+<body>
+    <div class="container py-5">
+        <div class="firma">Marco Giaffreda</div>
+        <h1 class="text-center mb-5 text-info icon-title"><i class="bi bi-diagram-3-fill"></i>Progetto di Rete Aziendale
+        </h1>
+
+        <div class="section">
+            <h2 class="icon-title"><i class="bi bi-info-circle-fill"></i> 1. Descrizione Generale</h2>
+            <p>Il presente progetto è finalizzato alla realizzazione dell’infrastruttura di rete, sia fisica che logica,
+                per un piano di un edificio aziendale che accoglierà:</p>
+            <ul>
+                <li>25 impiegati</li>
+                <li>2 tecnici IT</li>
+                <li>1 addetto al magazzino</li>
+            </ul>
+            <p>La rete è progettata per garantire:</p>
+            <ul>
+                <li>Affidabilità delle connessioni cablate per le postazioni operative</li>
+                <li>Copertura Wi-Fi uniforme tramite access point in punti strategici</li>
+                <li>Sistema di videosorveglianza attivo 24 ore su 24 nei corridoi e nel magazzino</li>
+                <li>Facilità di manutenzione e possibilità di espansione futura</li>
+                <li>Collegamento immediato per una TV e una stampante 3D a resina</li>
+            </ul>
+            <p>Il progetto include la scelta dei materiali e dispositivi più adeguati, con un bilanciamento tra qualità
+                e prezzo, garantendo:</p>
+            <ul>
+                <li>Prestazioni avanzate (Wi-Fi 6, videosorveglianza in Full HD, registrazione continua)</li>
+                <li>Gestione efficiente delle risorse</li>
+                <li>Contenimento dei costi</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2 class="icon-title"><i class="bi bi-tools"></i> 2. Materiali e Dispositivi</h2>
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+                <a href="https://lc.cx/fw5R-S" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Router Wi-Fi 6</h5>
+                            <p class="card-text">TP-Link Archer AX72 Pro Router AX5400</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/DOnAYg" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Access Point</h5>
+                            <p class="card-text">4x TP-Link EAP650</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/-1oVMD" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Telecamere Wi-Fi</h5>
+                            <p class="card-text">4x Tapo C510W Telecamera WiFi</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.amazon.it/Cavo-UTP-CAT6-305-DH-PFM923I-6UN-C/dp/B07YBNBZYY" target="_blank"
+                    class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Cavo ethernet</h5>
+                            <p class="card-text">Cavo Di Rete Dahua CAT6 UTP 305M</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/u84ifF" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Switch 5 porte</h5>
+                            <p class="card-text">2x TP-Link Ls105G 5 Porte Gigabit</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.amazon.it/Trendi-interruttore-artistico-coassiale-Ethernet/dp/B00DPTX4I8"
+                    target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Presa ethernet</h5>
+                            <p class="card-text">15x Trendi Presa coassiale per TV con presa Ethernet RJ45</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/WG1285" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Armadietto rack</h5>
+                            <p class="card-text">DIGITUS Armadio di rete Rack 10 pollici</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/X_D4tK" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Canaline cavi (4m)</h5>
+                            <p class="card-text">88x Romon Canalina Passacavi Muro</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/cr0bnZ" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Micro SD Sandisk 128 GB</h5>
+                            <p class="card-text">4x SanDisk 128GB Extreme Go microSD</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/s7g3SX" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Televisore TCL 65 pollici</h5>
+                            <p class="card-text">TCL 65T8B TV QLED 65” 4K Ultra HD</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://goo.su/gP52" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Cavo ethernet</h5>
+                            <p class="card-text">Vsnetwork Matassa 50 MT CAT6 CCA RJ45</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://lc.cx/Um-cUz" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Stampante 3D Resina</h5>
+                            <p class="card-text">Phrozen Mega 8K S Stampante 3D a Resina</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://goo.su/9BrSl3" target="_blank" class="text-decoration-none">
+                    <div class="card bg-dark text-white h-100 prodotto">
+                        <div class="card-body">
+                            <h5 class="card-title">Switch 2 porte</h5>
+                            <p class="card-text">12x Loydia Switch Ethernet Gigabit splitter</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="icon-title"><i class="bi bi-cash-stack"></i> 3. Preventivo di Spesa</h2>
+            <table class="table table-dark table-striped">
+                <thead>
+                    <tr>
+                        <th>Q.tà</th>
+                        <th>Descrizione</th>
+                        <th>Prezzo</th>
+                        <th>Totale</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>TP-Link Archer AX72 Pro Router AX5400</td>
+                        <td>€ 90,00</td>
+                        <td>€ 90,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Access Point TP-Link EAP650</td>
+                        <td>€ 103,00</td>
+                        <td>€ 412,00</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Switch TP-Link Ls105G 5 Porte Gigabit</td>
+                        <td>€ 14,00</td>
+                        <td>€ 28,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Tapo C510W Telecamera WiFi 2K</td>
+                        <td>€ 35,00</td>
+                        <td>€ 140,00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Cavo Di Rete Dahua CAT6 UTP 305M</td>
+                        <td>€ 138,00</td>
+                        <td>€ 138,00</td>
+                    </tr>
+                    <tr>
+                        <td>15</td>
+                        <td>Trendi Presa coassiale per TV con presa Ethernet RJ45</td>
+                        <td>€ 12,99</td>
+                        <td>€ 195,00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>DIGITUS Armadio Rack 19''</td>
+                        <td>€ 100,00</td>
+                        <td>€100,00</td>
+                    </tr>
+                    <tr>
+                        <td>88</td>
+                        <td>Romon Canalina Passacavi 4m</td>
+                        <td>€ 4,99</td>
+                        <td>€ 439,99</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Televisore TCL 75T8B 65 pollici</td>
+                        <td>€ 800,00</td>
+                        <td>€ 800,00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Vsnetwork Cavo di rete 50m</td>
+                        <td>€ 22,00</td>
+                        <td>€ 22,00</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>Loydia Switch 2 porte</td>
+                        <td>€ 12,00</td>
+                        <td>€ 144,00</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Micro SD Sandisk 128 GB</td>
+                        <td>€ 14,95</td>
+                        <td>€ 60,00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Phrozen Mega 8K S Stampante 3D a Resina</td>
+                        <td>€ 1620,00</td>
+                        <td>€ 1620,00</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Manodopera (cambia in relazione alla planimetria dei locali)</td>
+                        <td>€ 1500,00*</td>
+                        <td>€ 1500,00*</td>
+                    </tr>
+
+                    <tr class="bg-black text-white">
+                        <td><small><em>* Esclusa da IVA.</em></small></td>
+                        <td><small><em>** I prezzi potrebbero variare.</em></small></td>
+                        <td class="fw-bold">Totale</td>
+                        <td class="fw-bold">€ 5.689,00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="section">
+            <h2 class="icon-title"><i class="bi bi-diagram-2-fill"></i> 4. Schema della Rete</h2>
+            <div class="d-flex flex-column align-items-center schema-rete">
+                <img src="schema.jpg" alt="Schema fisico della rete">
+                <img src="switch.jpg" alt="Schema logico della rete" style="margin-top: -10px;">
+            </div>
+        </div>
+
+        <div class="section">
+            <h2 class="icon-title"><i class="bi bi-diagram-3"></i> 5. Piano IP e VLAN</h2>
+            <table class="table table-bordered table-dark">
+                <thead>
+                    <tr>
+                        <th>VLAN</th>
+                        <th>Destinazione</th>
+                        <th>Subnet</th>
+                        <th>Netmask</th>
+                        <th>Usable IPs</th>
+                        <th>Range IP</th>
+                        <th>Gateway</th>
+                        <th>Hosts Previsti</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="badge bg-info">10</span></td>
+                        <td>Uffici</td>
+                        <td>192.168.1.0/26</td>
+                        <td>255.255.255.192</td>
+                        <td>62</td>
+                        <td>192.168.1.1 – 192.168.1.62</td>
+                        <td>192.168.1.1</td>
+                        <td>25 PC, prese, TV smart, stampante</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge bg-info">20</span></td>
+                        <td>IT</td>
+                        <td>192.168.1.64/28</td>
+                        <td>255.255.255.240</td>
+                        <td>14</td>
+                        <td>192.168.1.65 – 192.168.1.78</td>
+                        <td>192.168.1.65</td>
+                        <td>2 PC, server, router interno</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge bg-info">30</span></td>
+                        <td>Magazzino</td>
+                        <td>192.168.1.80/28</td>
+                        <td>255.255.255.240</td>
+                        <td>14</td>
+                        <td>192.168.1.81 – 192.168.1.94</td>
+                        <td>192.168.1.81</td>
+                        <td>1 PC, dispositivi smart, presa LAN</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge bg-warning text-dark">40</span></td>
+                        <td>Wi-Fi ospiti</td>
+                        <td>192.168.2.0/24</td>
+                        <td>255.255.255.0</td>
+                        <td>254</td>
+                        <td>192.168.2.1 – 192.168.2.254</td>
+                        <td>192.168.2.1</td>
+                        <td>fino a 200 dispositivi guest Wi-Fi</td>
+                    </tr>
+                    <tr>
+                        <td><span class="badge bg-danger">50</span></td>
+                        <td>Videosorveglianza</td>
+                        <td>192.168.3.0/24</td>
+                        <td>255.255.255.0</td>
+                        <td>254</td>
+                        <td>192.168.3.1 – 192.168.3.254</td>
+                        <td>192.168.3.1</td>
+                        <td>4 telecamere Wi-Fi, registrazione video</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
